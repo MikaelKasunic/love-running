@@ -19,7 +19,8 @@ body {
 
 /* styling heads and logos*/
 
-h1, h2 {
+h1,
+h2 {
 
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -32,6 +33,7 @@ h1, h2 {
 
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 
 }
 
@@ -42,7 +44,8 @@ h1, h2 {
 
 }
 
-#menu, #logo {
+#menu,
+#logo {
 
     line-height: 75px;
 }
@@ -76,8 +79,17 @@ h1, h2 {
 #hero-outer {
 
     height: 600px;
-    height: 100%;
+    width: 100%;
     overflow: hidden;
+
+    position: relative;
+
+}
+
+#cover-text,
+#cover-text h2 {
+
+    color: #fff;
 
 }
 
@@ -87,17 +99,63 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
 }
 
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
-      transform: scale(1.1);
+
+    to {
+        transform: scale(1.1);
     }
+}
+
+#cover-text {
+
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgb(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
+#club-ethos {
+    height: 600px;
+}
+
+#left-about {
+     padding-top: 30px;
+     width: 33%;
+     float: left;
+     background-color: blue;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: silver;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: green;
 }
